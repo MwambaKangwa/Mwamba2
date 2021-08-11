@@ -5,8 +5,8 @@ using UnityEngine;
 public class Enemy2dController : MonoBehaviour {
 
 
-	//Move pl2yer in 2D sp2ce
-	public float maxSpeed = 2.57f;
+	//Move player in 2D sp2ce
+	public float maxSpeed = 2.59f;
 	public float jumpHeight = 6.47f;
 	public float EnemyHP = 100;
 	[HideInInspector]
@@ -134,7 +134,7 @@ public class Enemy2dController : MonoBehaviour {
 		if (currentLadder)
 		{
 			distanceFromLadder = Mathf.Abs(currentLadder.boundsCenter.x - t.position.x);
-			canClimbLadder = distanceFromLadder < 0.34f;
+			canClimbLadder = distanceFromLadder < 0.39f;
 			if (!isAttachedToLadder)
 			{
 				if
